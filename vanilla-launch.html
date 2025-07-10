@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launch Campaign - Something Amazing is Coming</title>
+    <meta name="description" content="Revolutionary technology that will transform how you work, create, and connect. Be among the first to experience the next generation.">
+    <link rel="stylesheet" href="launch-styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <!-- Background Effects -->
+        <div class="bg-glow"></div>
+        <div class="floating-orb orb-1"></div>
+        <div class="floating-orb orb-2"></div>
+        
+        <div class="hero-content">
+            <div class="hero-badge">
+                <svg class="star-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"></polygon>
+                </svg>
+                <span>Something Amazing is Coming</span>
+                <svg class="star-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"></polygon>
+                </svg>
+            </div>
+            
+            <h1 class="hero-title">
+                The Future is
+                <span class="gradient-text">Almost Here</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+                Revolutionary technology that will transform how you work, create, and connect. 
+                Be among the first to experience the next generation.
+            </p>
+            
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('signup')">
+                    <svg class="rocket-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+                        <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+                        <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                        <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                    </svg>
+                    Reserve Your Spot
+                </button>
+                <button class="btn btn-outline" onclick="scrollToSection('about')">
+                    Learn More
+                </button>
+            </div>
+            
+            <div class="countdown-section">
+                <p class="countdown-label">Launching in:</p>
+                <div class="countdown-timer" id="countdown">
+                    <div class="time-unit">
+                        <div class="time-card">
+                            <div class="time-value" id="days">00</div>
+                        </div>
+                        <div class="time-label">Days</div>
+                    </div>
+                    <div class="time-unit">
+                        <div class="time-card">
+                            <div class="time-value" id="hours">00</div>
+                        </div>
+                        <div class="time-label">Hours</div>
+                    </div>
+                    <div class="time-unit">
+                        <div class="time-card">
+                            <div class="time-value" id="minutes">00</div>
+                        </div>
+                        <div class="time-label">Minutes</div>
+                    </div>
+                    <div class="time-unit">
+                        <div class="time-card">
+                            <div class="time-value" id="seconds">00</div>
+                        </div>
+                        <div class="time-label">Seconds</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <button class="scroll-indicator" onclick="scrollToSection('about')">
+            <svg class="arrow-down" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="m6 9 6 6 6-6"></path>
+            </svg>
+        </button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Built for the <span class="gradient-text">Next Generation</span>
+                </h2>
+                <p class="section-subtitle">
+                    We're creating something that doesn't just meet today's needs—it anticipates tomorrow's possibilities. 
+                    Join us as we redefine what's possible.
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"></polygon>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Lightning Fast</h3>
+                    <p class="feature-description">Experience unprecedented speed and performance</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Secure & Reliable</h3>
+                    <p class="feature-description">Enterprise-grade security you can trust</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="m19 8 2 2-2 2"></path>
+                            <path d="m17 12 2 2-2 2"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Team Collaboration</h3>
+                    <p class="feature-description">Built for teams that want to achieve more together</p>
+                </div>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number gradient-text">10K+</div>
+                    <div class="stat-label">Early Adopters</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number gradient-text">99.9%</div>
+                    <div class="stat-label">Uptime</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number gradient-text">24/7</div>
+                    <div class="stat-label">Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section id="signup" class="signup-section">
+        <div class="signup-glow"></div>
+        <div class="container">
+            <div class="signup-card">
+                <svg class="trending-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <polyline points="22,7 13.5,15.5 8.5,10.5 2,17"></polyline>
+                    <polyline points="16,7 22,7 22,13"></polyline>
+                </svg>
+                
+                <h2 class="signup-title">
+                    Don't Miss the <span class="gradient-text">Launch</span>
+                </h2>
+                <p class="signup-subtitle">
+                    Be the first to experience the future. Join thousands of others who are already on the waitlist.
+                </p>
+                
+                <form class="email-form" id="emailForm">
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <svg class="mail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <input type="email" placeholder="Enter your email" id="emailInput" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submitBtn">
+                            Get Early Access
+                        </button>
+                    </div>
+                    <p class="form-disclaimer">No spam, unsubscribe at any time.</p>
+                </form>
+                
+                <div class="success-message" id="successMessage" style="display: none;">
+                    <div class="success-content">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                        </svg>
+                        <span>You're all set!</span>
+                    </div>
+                    <p>We'll send you an exclusive early access invite.</p>
+                </div>
+                
+                <div class="signup-features">
+                    <div class="signup-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                        </svg>
+                        <span>Secure & Private</span>
+                    </div>
+                    <div class="signup-feature">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="m19 8 2 2-2 2"></path>
+                            <path d="m17 12 2 2-2 2"></path>
+                        </svg>
+                        <span>10,000+ Waiting</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Launch Campaign. Something amazing is coming.</p>
+        </div>
+    </footer>
+
+    <script src="launch-script.js"></script>
+</body>
+</html>
